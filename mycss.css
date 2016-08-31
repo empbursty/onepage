@@ -1,0 +1,404 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+.check {
+	background: linear-gradient(to bottom left, teal, white);
+	bottom: 8px;
+	float: right; 
+	position: fixed; 
+	resize: none;
+	right: 9px;
+}
+noscript {
+	color: red; 
+	font-size: 2em;
+	font-style: italic; 
+	margin-left: 450px;
+}
+ol, ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a, a:hover {
+	text-decoration: none;
+}
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+
+/* header */
+.layout-position {
+	width: 100%;
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+.header {
+	padding: 20px 0;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+.logo {
+	float: left;
+}
+.nav {
+	float: right;
+}
+.nav li {
+	float: left;
+	margin-right: 40px;
+	padding-top: 5px;
+}
+.nav a {
+	text-transform: uppercase;
+	font-family: arial, sans-serif;
+	font-size: 14px;
+	color: #fff;
+}
+.nav li:last-child {
+	margin-right: 0px;
+}
+/* home */
+#home {
+	height: 700px;
+	background: #222 url("imgs/bghome.png") no-repeat center bottom;
+	background-size: cover;
+	border-top: 1px solid;
+	padding-top: 290px;
+	text-align: center;
+	color: #fff;
+}
+h1, h2 {
+	margin: 0;
+}
+h1 {
+	font: 75px Arial, sans-serif;
+	line-height: 75px;
+	margin-bottom: 50px;
+}
+h2 {
+	font: 40px Arial, sans-serif;
+	line-height: 40px;
+	margin-bottom: 40px;
+}
+.button {
+	background-color: #fed136;
+	padding: 15px 25px;
+	font: 24px Arial, sans-serif;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 4px;
+}
+.button:hover {
+	background: #eec124;
+	color: #fff;
+}
+.nav li a:hover {
+	color: #fed136;
+}
+
+/* section common styles */
+.title {
+	margin: 0;
+	font: bold 40px/40px Arial, sans-serif;
+	color: #222;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+.sub-title {
+	margin: 0;
+	font: 16px/16px Times New Roman, sans-serif;
+	color: #777;
+	margin-bottom: 70px !important;
+}
+.item-layout-position > .item {
+	float: left;
+	padding: 10px;
+	width: 33.33%;
+}
+.item-title {
+	display: block;
+	color: #222;
+	font: bold 18px/18px Arial, sans-serif;
+	margin: 20px 0 8px 0;
+	transition: color .3s;
+	text-transform: capitalize;
+}
+.item-title:hover {
+	color: #555;
+}
+.item-sub-title {
+	color: #777;
+}
+
+/* section services */
+.services {
+	height: 570px;
+	text-align: center;
+	padding: 120px 0;
+}
+.services .item-sub-title {
+	font: 18px/18px Times New Roman, sans-serif;
+}
+
+/* section portfolio */
+.portfolio {
+	height: 1220px;
+	padding: 120px 0;
+	text-align: center;
+	background: #f7f7f7;
+}
+.portfolio .item-sub-title {
+	font: 14px/14px Times New Roman, sans-serif;
+}
+/* для первых трех элементов */
+.portfolio .item:nth-child(-n + 3) p {
+	margin-bottom: 70px;
+}
+.portfolio .item:nth-child a {
+	margin-top: 18px;
+}
+.portfolio .item p {
+	margin-top: 0;
+}
+
+/* section about us */
+
+.about {
+	text-align: center;
+	padding: 120px 0;
+}
+.about-text {
+	width: 35%;
+}
+.about-text .item-title {
+	line-height: 30px;
+	margin-top: 0;
+}
+.about-text .item-sub-title {
+	margin-top: 0;
+}
+.about-img {
+	width: 30%;
+	padding: 0 20px;
+}
+.about-img:after {
+	content: "";
+	display: block;
+	margin: -5px auto;
+	height: 94px;
+	width: 3px;
+	background: #f1f1f1;
+}
+.about-img img {
+	display: inline-block;
+	width: 177px;
+	height: 177px;
+	border: 7px solid #f1f1f1;
+	border-radius: 50%;
+}
+div.last-round {
+	width: 177px;
+	height: 177px;
+	background-color: #fed136;
+	border: 7px solid #f1f1f1;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+p.inner-round {
+	text-transform: uppercase;
+	vertical-align: center;
+	color: white;
+	text-transform: uppercase;
+	padding-top: 5px;
+	line-height: 30px;
+	text-shadow: 0 1px rgba(0, 0, 0, .3)
+}
+
+/* team */
+.team {
+	padding: 120px 0;
+	text-align: center;
+	background: #f7f7f7;
+}
+.team .item {
+	float: left;
+	width: 33.33%;
+	padding: 0 10px;
+}
+.team .item img {
+	width: 220px;
+	height: 220px;
+	border: 7px solid white;
+	border-radius: 50%;
+}
+.team .item-sub-title {
+	font: 14px/14px Arial, sans-serif;
+}
+.team-info {
+	margin-top: 45px;
+}
+.social {
+	margin-top: 10px;
+}
+.social a {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border: 3px solid #222;
+	border-radius: 50%;
+	margin: 0 3px;
+	background: url("imgs/social-sprite.png") no-repeat;
+}
+.social a.black {
+	background-color: #222;
+}
+.social a.icon-tw {
+	background-position: 0 0;
+}
+.social a.icon-tw:hover {
+	border-color: #00aced;
+	background-color: #00aced;
+	background-position: 0 -40px;
+}
+.social a.icon-tw.black {
+	background-position: 0 -40px;
+}
+.social a.icon-fb {
+	background-position: -40px 0;
+}
+.social a.icon-fb:hover {
+	border-color: #3b5998;
+	background-color: #3b5998;
+	background-position: -40px -40px;
+}
+.social a.icon-fb.black {
+	background-position: -40px -40px;
+}
+.social a.icon-pn {
+	background-position: -80px 0;
+}
+.social a.icon-pn:hover {
+	border-color: #cb2028;
+	background-color: #cb2028;
+	background-position: -80px -40px;
+}
+.social a.icon-pn.black {
+	background-position: -80px -40px;
+}
+.social a.icon-gl {
+	background-position: -120px 0;
+}
+.social a.icon-gl:hover {
+	border-color: #d95232;
+	background-color: #d95232;
+	background-position: -120px -40px;
+}
+.social a.icon-gl.black {
+	background-position: -120px -40px;
+	backgtound-color: #fff;
+}
+
+.brand {
+	padding: 60px 0;
+	text-align: center;
+}
+.brand a {
+	display: inline-block;
+	margin-right: 40px;
+}
+.brand a:last-of-type {
+	margin-right: 0;
+}
+.brand img {
+	vertical-align: middle;
+}
+
+/* contact */
+
+.contact {
+	text-align: center;
+	padding: 120px 0;
+	background: #222 url("imgs/map.png") no-repeat;
+	background-position: right bottom;
+}
+.contact .title {
+	color: #fff;
+}
+#message .left,
+#message .right {
+	width: 48%;
+}
+#message input[type="text"],
+#message textarea {
+	border-radius: 4px;
+	width: 100%;
+	background: #fff;
+	box-shadow: none;
+	margin-bottom: 30px;
+	padding: 15px 20px;
+	font: bold 14px/14px Arial, sans-serif;
+	color: #222;
+}
+#message input[type="text"] {
+	height: 50px;
+	border: 1px solid #ccc;
+}
+#message textarea {
+	height: 210px;
+	border: 0;
+	resize: none;
+}
+::-webkit-input-placeholder {
+	font: bold 14px/14px Arial, sans-serif;
+	text-transform: uppercase;
+}
+::-moz-placeholder {
+	font: bold 14px/14px Arial, sans-serif;
+	text-transform: uppercase;
+}
+.footer {
+	padding: 25px 0;
+}
+.footer .social {
+	margin-top: 0;
+	margin-left: 365px;
+}
+.footer p {
+	font: 14px Arial, sans-serif;
+	color: #555;
+	margin-top: 13px;
+}
