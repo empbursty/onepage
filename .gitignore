@@ -1,2 +1,5 @@
 #psd-files
 imgs/*.psd
+
+#bower
+bower_components

@@ -188,7 +188,7 @@ h2 {
 .portfolio .item:nth-child(-n + 3) p {
 	margin-bottom: 70px;
 }
-.portfolio .item:nth-child a {
+.portfolio .item a {
 	margin-top: 18px;
 }
 .portfolio .item p {
@@ -240,7 +240,7 @@ div.last-round {
 }
 p.inner-round {
 	text-transform: uppercase;
-	vertical-align: center;
+	vertical-align: middle;
 	color: white;
 	text-transform: uppercase;
 	padding-top: 5px;
@@ -329,7 +329,7 @@ p.inner-round {
 }
 .social a.icon-gl.black {
 	background-position: -120px -40px;
-	backgtound-color: #fff;
+	background-color: #fff;
 }
 
 .brand {
